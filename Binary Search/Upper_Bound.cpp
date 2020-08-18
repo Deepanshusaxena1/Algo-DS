@@ -4,7 +4,7 @@ int Upper_Bound(vector<int> a, int s)
 {
     int l = 0;
     int r = a.size()-1;
-    int UpperBound = -1;
+    int upperbound = -1;
     while(l<=r)
     {
         int m = l + (r-l)/2;
@@ -14,11 +14,11 @@ int Upper_Bound(vector<int> a, int s)
             r = m-1;
         else
         {
-            UpperBound = m;
+            upperbound = m;
             l = m + 1;
         }
     }
-    return UpperBound;
+    return upperbound;
 }
 int main()
 {
